@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA ARCHITECTURAL STILLS — Luxury Interior Photography Hyderabad</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            400: '#D4AF37',
+                            500: '#C5A028',
+                            600: '#A38118',
+                        },
+                        obsidian: '#09090B',
+                        cardBg: '#121215',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Custom scrollbar for luxury dark aesthetic */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #09090B;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #27272A;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+        .grain-overlay {
+            background-image: radial-gradient(rgba(212, 175, 55, 0.03) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-obsidian text-zinc-300 font-sans antialiased selection:bg-gold-500/20 selection:text-gold-400 min-h-screen flex flex-col justify-between">
+
+    <!-- Toast Notification Banner -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 bg-zinc-900 border border-gold-500/30 text-zinc-100 px-6 py-4 rounded-xl shadow-2xl flex items-center space-x-3 pointer-events-none">
+        <i data-lucide="check-circle" class="w-5 h-5 text-gold-400"></i>
+        <span id="toast-message" class="text-sm font-medium">Inquiry submitted successfully!</span>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 w-full z-40 bg-obsidian/80 backdrop-blur-md border-b border-zinc-800/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+            <a href="#" class="group flex items-center space-x-2">
+                <span class="font-serif text-2xl tracking-widest text-zinc-100 group-hover:text-gold-400 transition-colors">AURA</span>
+                <span class="text-[10px] tracking-widest uppercase border border-gold-500/30 text-gold-400 px-2 py-0.5 rounded-full font-mono">HYD</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-xs tracking-widest uppercase text-zinc-400">
+                <a href="#about" class="hover:text-gold-400 transition-colors">My Story</a>
+                <a href="#portfolio" class="hover:text-gold-400 transition-colors">Portfolio</a>
+                <a href="#services" class="hover:text-gold-400 transition-colors">Services</a>
+                <a href="#contact" class="hover:text-gold-400 transition-colors">Book Shoot</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#contact" class="inline-flex items-center space-x-2 text-xs uppercase tracking-widest bg-zinc-900 hover:bg-gold-500 hover:text-obsidian text-zinc-200 px-5 py-2.5 rounded-full border border-zinc-700 hover:border-gold-500 transition-all duration-300 font-medium">
+                    <span>Reserve Date</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-zinc-300 hover:text-gold-400 focus:outline-none p-2">
+                <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cardBg border-b border-zinc-800 px-6 py-6 space-y-4">
+            <a href="#about" class="block text-sm uppercase tracking-widest text-zinc-300 hover:text-gold-400 py-1">My Story</a>
+            <a href="#portfolio" class="block text-sm uppercase tracking-widest text-zinc-300 hover:text-gold-400 py-1">Portfolio</a>
+            <a href="#services" class="block text-sm uppercase tracking-widest text-zinc-300 hover:text-gold-400 py-1">Services</a>
+            <a href="#contact" class="block text-sm uppercase tracking-widest text-gold-400 py-1 font-semibold">Book Shoot</a>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="flex-grow pt-20">
+
+        <!-- HERO SECTION -->
+        <section class="relative min-h-[90vh] flex items-center justify-center grain-overlay px-6 md:px-12 py-20 overflow-hidden">
+            <!-- Background Accent Light -->
+            <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gold-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+            <div class="max-w-5xl mx-auto text-center space-y-8 z-10">
+                <div class="inline-flex items-center space-x-2 bg-zinc-900/80 border border-zinc-800 text-zinc-400 text-xs px-4 py-1.5 rounded-full uppercase tracking-widest">
+                    <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+                    <span>Hyderabad & Pan-India Spatial Photography</span>
+                </div>
+
+                <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-normal tracking-tight text-zinc-100 leading-[1.15]">
+                    Capturing the Harmony of <span class="italic text-gold-400 font-serif">Light</span>, Line & Space.
+                </h1>
+
+                <p class="max-w-2xl mx-auto text-zinc-400 text-base md:text-lg font-light leading-relaxed">
+                    Precision-driven architectural and interior portfolio photography for architects, luxury interior designers, and bespoke hospitality spaces in Hyderabad.
+                </p>
+
+                <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#portfolio" class="w-full sm:w-auto inline-flex items-center justify-center space-x-3 bg-gold-500 hover:bg-gold-400 text-obsidian px-8 py-4 rounded-full font-medium text-xs tracking-widest uppercase transition-all duration-300 shadow-lg shadow-gold-500/10">
+                        <span>Explore Portfolio</span>
+                        <i data-lucide="eye" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center space-x-3 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 px-8 py-4 rounded-full font-medium text-xs tracking-widest uppercase transition-all duration-300">
+                        <span>Schedule Consultation</span>
+                    </a>
+                </div>
+
+                <!-- Stats Bar -->
+                <div class="pt-16 grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-zinc-800/80 max-w-4xl mx-auto">
+                    <div>
+                        <p class="font-serif text-2xl md:text-3xl text-zinc-100">100%</p>
+                        <p class="text-xs uppercase tracking-widest text-zinc-500 mt-1">Parallel Geometry</p>
+                    </div>
+                    <div>
+                        <p class="font-serif text-2xl md:text-3xl text-zinc-100">Flambient</p>
+                        <p class="text-xs uppercase tracking-widest text-zinc-500 mt-1">Lighting Technique</p>
+                    </div>
+                    <div>
+                        <p class="font-serif text-2xl md:text-3xl text-zinc-100">4K / 8K</p>
+                        <p class="text-xs uppercase tracking-widest text-zinc-500 mt-1">Ultra-Res Delivery</p>
+                    </div>
+                    <div>
+                        <p class="font-serif text-2xl md:text-3xl text-zinc-100">48-72 hrs</p>
+                        <p class="text-xs uppercase tracking-widest text-zinc-500 mt-1">Turnaround Time</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MY STORY / ABOUT SECTION -->
+        <section id="about" class="py-24 bg-cardBg border-y border-zinc-800/60 px-6 md:px-12 relative">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Image / Visual Side -->
+                <div class="lg:col-span-5 relative">
+                    <div class="aspect-[4/5] rounded-2xl overflow-hidden border border-zinc-800 relative group">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80" 
+                             alt="Interior Architecture Photography" 
+                             class="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                             onerror="this.onerror=null; this.src='https://placehold.co/800x1000/121215/D4AF37?text=Architecture+Studio';" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 bg-obsidian/90 backdrop-blur-md rounded-xl border border-zinc-800">
+                            <p class="text-xs text-gold-400 uppercase tracking-widest font-mono">Foundational Ethos</p>
+                            <p class="text-sm text-zinc-200 mt-1 font-serif italic">"Precision in structure. Harmony in ambient shadow."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Narrative Side -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 text-gold-400 text-xs uppercase tracking-widest font-mono">
+                        <i data-lucide="compass" class="w-4 h-4"></i>
+                        <span>The Transition</span>
+                    </div>
+
+                    <h2 class="font-serif text-3xl sm:text-4xl text-zinc-100 font-normal leading-tight">
+                        From Enterprise Technology to the Art of Spatial Curation.
+                    </h2>
+
+                    <div class="space-y-4 text-zinc-400 text-sm md:text-base leading-relaxed font-light">
+                        <p>
+                            My journey began in the high-stakes world of enterprise technology consulting—a field where absolute precision, meticulous attention to detail, and logical rigor dictated every successful outcome. 
+                        </p>
+                        <p>
+                            Driven by a lifelong passion for architecture, clean geometry, and visual harmony, I transitioned my analytical eye into the realm of <strong class="text-zinc-200 font-normal">Architectural & Interior Photography</strong>. 
+                        </p>
+                        <p>
+                            I don't just photograph rooms; I document the exact intent of the designer. By combining modern <em class="text-gold-400 italic">Flambient exposure blending</em> (merging natural ambient glow with high-precision subtle flash) and perfect 3-way vertical alignment, I deliver publication-ready visual assets that capture true color, wood textures, and structural depth.
+                        </p>
+                    </div>
+
+                    <!-- Core Attributes -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-zinc-800">
+                        <div class="flex items-start space-x-3">
+                            <i data-lucide="check" class="w-5 h-5 text-gold-400 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="text-xs uppercase tracking-widest text-zinc-200 font-semibold">Uncompromising Detail</h4>
+                                <p class="text-xs text-zinc-500 mt-0.5">Perfect vertical lines, glare-free glass, and accurate fabric tones.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i data-lucide="check" class="w-5 h-5 text-gold-400 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="text-xs uppercase tracking-widest text-zinc-200 font-semibold">Corporate Professionalism</h4>
+                                <p class="text-xs text-zinc-500 mt-0.5">Reliable scheduling, transparent terms, and prompt delivery.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PORTFOLIO SHOWCASE GRID -->
+        <section id="portfolio" class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 space-y-6 md:space-y-0">
+                <div>
+                    <span class="text-gold-400 text-xs uppercase tracking-widest font-mono">Curated Work</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl text-zinc-100 font-normal mt-2">Selected Portfolios</h2>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="flex flex-wrap gap-2 text-xs uppercase tracking-widest" id="portfolio-filters">
+                    <button data-filter="all" class="filter-btn active bg-gold-500 text-obsidian px-5 py-2 rounded-full font-medium transition-all">All Projects</button>
+                    <button data-filter="residential" class="filter-btn bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-200 px-5 py-2 rounded-full transition-all">Residential</button>
+                    <button data-filter="hospitality" class="filter-btn bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-200 px-5 py-2 rounded-full transition-all">Hospitality</button>
+                    <button data-filter="commercial" class="filter-btn bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-200 px-5 py-2 rounded-full transition-all">Commercial</button>
+                </div>
+            </div>
+
+            <!-- Image Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolio-grid">
+                
+                <!-- Item 1: Residential -->
+                <div class="portfolio-item residential group relative overflow-hidden rounded-2xl border border-zinc-800 bg-cardBg aspect-[4/3] cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80" 
+                         alt="Jubilee Hills Luxury Villa" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                         onerror="this.onerror=null; this.src='https://placehold.co/800x600/121215/D4AF37?text=Jubilee+Hills+Villa';" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <span class="text-[10px] uppercase tracking-widest text-gold-400 font-mono">Residential Villa</span>
+                        <h3 class="font-serif text-xl text-zinc-100 mt-1">Jubilee Hills Private Estate</h3>
+                        <p class="text-xs text-zinc-400 mt-1">Architect: Atelier Design Studio</p>
+                    </div>
+                </div>
+
+                <!-- Item 2: Hospitality -->
+                <div class="portfolio-item hospitality group relative overflow-hidden rounded-2xl border border-zinc-800 bg-cardBg aspect-[4/3] cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=80" 
+                         alt="Boutique Hotel Suite" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                         onerror="this.onerror=null; this.src='https://placehold.co/800x600/121215/D4AF37?text=Boutique+Hotel';" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <span class="text-[10px] uppercase tracking-widest text-gold-400 font-mono">Hospitality</span>
+                        <h3 class="font-serif text-xl text-zinc-100 mt-1">Boutique Staycation Resort</h3>
+                        <p class="text-xs text-zinc-400 mt-1">Location: Gandipet, Hyderabad</p>
+                    </div>
+                </div>
+
+                <!-- Item 3: Commercial -->
+                <div class="portfolio-item commercial group relative overflow-hidden rounded-2xl border border-zinc-800 bg-cardBg aspect-[4/3] cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80" 
+                         alt="Hitec City Executive Workspace" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                         onerror="this.onerror=null; this.src='https://placehold.co/800x600/121215/D4AF37?text=Executive+Workspace';" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <span class="text-[10px] uppercase tracking-widest text-gold-400 font-mono">Commercial</span>
+                        <h3 class="font-serif text-xl text-zinc-100 mt-1">Financial District HQ</h3>
+                        <p class="text-xs text-zinc-400 mt-1">Space: 12,000 sq ft Corporate Floor</p>
+                    </div>
+                </div>
+
+                <!-- Item 4: Residential -->
+                <div class="portfolio-item residential group relative overflow-hidden rounded-2xl border border-zinc-800 bg-cardBg aspect-[4/3] cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=80" 
+                         alt="Penthouse Living Room" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                         onerror="this.onerror=null; this.src='https://placehold.co/800x600/121215/D4AF37?text=Penthouse+Living';" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <span class="text-[10px] uppercase tracking-widest text-gold-400 font-mono">Residential</span>
+                        <h3 class="font-serif text-xl text-zinc-100 mt-1">Neopolis Luxury Penthouse</h3>
+                        <p class="text-xs text-zinc-400 mt-1">Interiors: Minimalist Modern</p>
+                    </div>
+                </div>
+
+                <!-- Item 5: Hospitality -->
+                <div class="portfolio-item hospitality group relative overflow-hidden rounded-2xl border border-zinc-800 bg-cardBg aspect-[4/3] cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80" 
+                         alt="Artisanal Cafe" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                         onerror="this.onerror=null; this.src='https://placehold.co/800x600/121215/D4AF37?text=Artisanal+Cafe';" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <span class="text-[10px] uppercase tracking-widest text-gold-400 font-mono">Hospitality</span>
+                        <h3 class="font-serif text-xl text-zinc-100 mt-1">Banjara Hills Bistro</h3>
+                        <p class="text-xs text-zinc-400 mt-1">Lighting: Ambient & Architectural</p>
+                    </div>
+                </div>
+
+                <!-- Item 6: Commercial -->
+                <div class="portfolio-item commercial group relative overflow-hidden rounded-2xl border border-zinc-800 bg-cardBg aspect-[4/3] cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1000&q=80" 
+                         alt="Design Studio Experience Center" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                         onerror="this.onerror=null; this.src='https://placehold.co/800x600/121215/D4AF37?text=Experience+Center';" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <span class="text-[10px] uppercase tracking-widest text-gold-400 font-mono">Commercial</span>
+                        <h3 class="font-serif text-xl text-zinc-100 mt-1">Gachibowli Experience Center</h3>
+                        <p class="text-xs text-zinc-400 mt-1">Material Showcase Architecture</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SERVICES & PRICING GRID -->
+        <section id="services" class="py-24 bg-cardBg border-y border-zinc-800/60 px-6 md:px-12">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                    <span class="text-gold-400 text-xs uppercase tracking-widest font-mono">Services & Offerings</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl text-zinc-100 font-normal">Transparent Investment</h2>
+                    <p class="text-zinc-400 text-sm font-light">Tailored packages for designers, architects, and luxury property owners.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <!-- Service 1 -->
+                    <div class="bg-obsidian border border-zinc-800 p-8 rounded-2xl flex flex-col justify-between hover:border-gold-500/50 transition-all duration-300 group">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 bg-zinc-900 rounded-xl flex items-center justify-center text-gold-400 border border-zinc-800 group-hover:scale-110 transition-transform">
+                                <i data-lucide="camera" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="font-serif text-xl text-zinc-100">Interior Portfolio Shoots</h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed font-light">
+                                Comprehensive documentation of residential flats, penthouses, or villas. Crafted specifically for interior design portfolios.
+                            </p>
+                            <ul class="space-y-2 pt-2 text-xs text-zinc-300">
+                                <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400 mr-2"></i>12 to 18 High-Res Stills</li>
+                                <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400 mr-2"></i>Flambient Lighting</li>
+                                <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400 mr-2"></i>Perspective Correction</li>
+                            </ul>
+                        </div>
+                        <div class="pt-8 mt-6 border-t border-zinc-800/80">
+                            <span class="text-[10px] text-zinc-500 uppercase tracking-widest">Starting at</span>
+                            <p class="text-2xl font-serif text-gold-400 font-normal mt-0.5">₹25,000 <span class="text-xs text-zinc-500 font-sans">/ shoot</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="bg-obsidian border border-gold-500/30 p-8 rounded-2xl flex flex-col justify-between hover:border-gold-500 transition-all duration-300 group relative">
+                        <span class="absolute -top-3 right-6 bg-gold-500 text-obsidian text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Popular</span>
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 bg-zinc-900 rounded-xl flex items-center justify-center text-gold-400 border border-zinc-800 group-hover:scale-110 transition-transform">
+                                <i data-lucide="building-2" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="font-serif text-xl text-zinc-100">Architectural Coverage</h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed font-light">
+                                Full exterior structural capture, twilight exterior lighting shots, and spatial flow for architecture firms and builders.
+                            </p>
+                            <ul class="space-y-2 pt-2 text-xs text-zinc-300">
+                                <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400 mr-2"></i>Day + Twilight Capture</li>
+                                <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400 mr-2"></i>20+ Master Files</li>
+                                <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400 mr-2"></i>Publication-Ready Editorial</li>
+                            </ul>
+                        </div>
+                        <div class="pt-8 mt-6 border-t border-zinc-800/80">
+                            <span class="text-[10px] text-zinc-500 uppercase tracking-widest">Starting at</span>
+                            <p class="text-2xl font-serif text-gold-400 font-normal mt-0.5">₹40,000 <span class="text-xs text-zinc-500 font-sans">/ project</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="bg-obsidian border border-zinc-800 p-8 rounded-2xl flex flex-col justify-between hover:border-gold-500/50 transition-all duration-300 group">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 bg-zinc-900 rounded-xl flex items-center justify-center text-gold-400 border border-zinc-800 group-hover:scale-110 transition-transform">
+                                <i data-lucide="video" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="font-serif text-xl text-zinc-100">Short-Form Video Reels</h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed font-light">
+                                Cinematic, aesthetic 4K vertical video tours optimized for Instagram Reels and LinkedIn brand showcases.
+                            </p>
+                            <ul class="space-y-2 pt-2 text-xs text-zinc-300">
+                                <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400 mr-2"></i>2x 30s Short Videos</li>
+                                <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400 mr-2"></i>Slow Motion Panning</li>
+                                <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400 mr-2"></i>Licensed Ambient Audio</li>
+                            </ul>
+                        </div>
+                        <div class="pt-8 mt-6 border-t border-zinc-800/80">
+                            <span class="text-[10px] text-zinc-500 uppercase tracking-widest">Add-On Starting at</span>
+                            <p class="text-2xl font-serif text-gold-400 font-normal mt-0.5">₹12,000 <span class="text-xs text-zinc-500 font-sans">/ package</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="bg-obsidian border border-zinc-800 p-8 rounded-2xl flex flex-col justify-between hover:border-gold-500/50 transition-all duration-300 group">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 bg-zinc-900 rounded-xl flex items-center justify-center text-gold-400 border border-zinc-800 group-hover:scale-110 transition-transform">
+                                <i data-lucide="shield-check" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="font-serif text-xl text-zinc-100">Vendor Licensing</h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed font-light">
+                                Commercial image licensing for third-party vendors (furniture, tile, light manufacturers) seeking catalog usage rights.
+                            </p>
+                            <ul class="space-y-2 pt-2 text-xs text-zinc-300">
+                                <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400 mr-2"></i>Commercial Release</li>
+                                <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400 mr-2"></i>Shared-Cost Splitting</li>
+                                <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400 mr-2"></i>High-Res Print Usage</li>
+                            </ul>
+                        </div>
+                        <div class="pt-8 mt-6 border-t border-zinc-800/80">
+                            <span class="text-[10px] text-zinc-500 uppercase tracking-widest">Custom Rate</span>
+                            <p class="text-2xl font-serif text-gold-400 font-normal mt-0.5">₹15,000 <span class="text-xs text-zinc-500 font-sans">/ vendor</span></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- BOOKING & CONTACT FORM -->
+        <section id="contact" class="py-24 px-6 md:px-12 max-w-5xl mx-auto">
+            <div class="bg-cardBg border border-zinc-800 rounded-3xl p-8 md:p-12 relative overflow-hidden">
+                <!-- Soft Glow -->
+                <div class="absolute -bottom-24 -right-24 w-80 h-80 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Form Header Info -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <span class="text-gold-400 text-xs uppercase tracking-widest font-mono">Reserve a Shoot</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl text-zinc-100 font-normal">Let's Discuss Your Space</h2>
+                        <p class="text-zinc-400 text-sm font-light leading-relaxed">
+                            Currently accepting commissions in Jubilee Hills, Banjara Hills, Financial District, Neopolis, and across South India.
+                        </p>
+
+                        <div class="space-y-4 pt-4 border-t border-zinc-800/80 text-xs text-zinc-300">
+                            <div class="flex items-center space-x-3">
+                                <i data-lucide="map-pin" class="w-4 h-4 text-gold-400"></i>
+                                <span>Based in Hyderabad, Telangana</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i data-lucide="mail" class="w-4 h-4 text-gold-400"></i>
+                                <span>studio@aurastills.com</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i data-lucide="calendar" class="w-4 h-4 text-gold-400"></i>
+                                <span>Average Lead Time: 5 - 7 Days</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Booking Form -->
+                    <div class="lg:col-span-7">
+                        <form id="booking-form" class="space-y-4">
+                            <div>
+                                <label class="block text-xs uppercase tracking-widest text-zinc-400 mb-2">Full Name *</label>
+                                <input type="text" required placeholder="e.g. Vikram Verma" 
+                                       class="w-full bg-obsidian border border-zinc-800 rounded-xl px-4 py-3 text-sm text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-gold-400 transition-colors">
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs uppercase tracking-widest text-zinc-400 mb-2">Client Type *</label>
+                                    <select required class="w-full bg-obsidian border border-zinc-800 rounded-xl px-4 py-3 text-sm text-zinc-100 focus:outline-none focus:border-gold-400 transition-colors">
+                                        <option value="" disabled selected>Select Category</option>
+                                        <option value="Interior Designer">Interior Designer</option>
+                                        <option value="Architect">Architect</option>
+                                        <option value="Homeowner / Real Estate">Homeowner / Villa Owner</option>
+                                        <option value="Hospitality Brand">Hospitality / Hotel</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs uppercase tracking-widest text-zinc-400 mb-2">Project Location *</label>
+                                    <input type="text" required placeholder="e.g. Jubilee Hills, Hyd" 
+                                           class="w-full bg-obsidian border border-zinc-800 rounded-xl px-4 py-3 text-sm text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-gold-400 transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs uppercase tracking-widest text-zinc-400 mb-2">Project Details & Estimated Date</label>
+                                <textarea rows="4" placeholder="Mention area size (sq ft), number of rooms, or special design highlights..." 
+                                          class="w-full bg-obsidian border border-zinc-800 rounded-xl px-4 py-3 text-sm text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-gold-400 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-gold-500 hover:bg-gold-400 text-obsidian py-4 rounded-xl font-medium text-xs uppercase tracking-widest transition-all duration-300 shadow-lg shadow-gold-500/10 flex items-center justify-center space-x-2">
+                                <span>Submit Shoot Inquiry</span>
+                                <i data-lucide="send" class="w-4 h-4"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-obsidian border-t border-zinc-800/80 py-12 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-2">
+                <span class="font-serif text-xl tracking-widest text-zinc-100">AURA</span>
+                <span class="text-xs text-zinc-500 font-mono">| Luxury Spatial Photography</span>
+            </div>
+
+            <p class="text-xs text-zinc-500 text-center">
+                &copy; <span id="year"></span> Aura Architectural Stills. All rights reserved. Hyderabad, India.
+            </p>
+
+            <div class="flex items-center space-x-6 text-zinc-400 text-xs">
+                <a href="#" class="hover:text-gold-400 transition-colors">Instagram</a>
+                <a href="#" class="hover:text-gold-400 transition-colors">LinkedIn</a>
+                <a href="#" class="hover:text-gold-400 transition-colors">Behance</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Dynamic Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Portfolio Filtering Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button state
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-gold-500', 'text-obsidian', 'active');
+                    b.classList.add('bg-zinc-900', 'border', 'border-zinc-800', 'text-zinc-400');
+                });
+                
+                btn.classList.add('bg-gold-500', 'text-obsidian', 'active');
+                btn.classList.remove('bg-zinc-900', 'border', 'border-zinc-800', 'text-zinc-400');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Booking Form Submission & Toast
+        const bookingForm = document.getElementById('booking-form');
+        const toast = document.getElementById('toast');
+
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Trigger Toast
+            toast.classList.remove('translate-y-24', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            // Reset form
+            bookingForm.reset();
+
+            // Hide Toast after 4 seconds
+            setTimeout(() => {
+                toast.classList.add('translate-y-24', 'opacity-0');
+                toast.classList.remove('translate-y-0', 'opacity-100');
+            }, 4000);
+        });
+    </script>
+</body>
+</html>
